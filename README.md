@@ -1,16 +1,22 @@
 # MERN Notes App
 
-A simple MERN stack app with CRUD functionality.
+A simple and responsive Notes App built with the MERN stack. Users can create, edit, and delete personal notes with a clean UI and persistent backend storage.
 
-## Structure
+## Project Structure
 
-- `frontend/`: React app
-- `backend/`: Express + MongoDB API
+- `frontend/` – React app (UI)
+- `backend/` – Node.js + Express server connected to MongoDB
 
-## Usage
+## Getting Started
 
-Start backend:
+### 📦 Start the backend server
 ```bash
 cd backend
 npm install
 node server.js
+
+💻 Start the frontend
+bash
+cd ../frontend
+npm install
+npm start
