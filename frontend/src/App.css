@@ -1,0 +1,200 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.App {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Input Section */
+.input-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Notes List Section */
+.notes-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  gap: 1px;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.notes-section h2 {
+  margin: 0;
+}
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+/* Buttons */
+button {
+  margin: auto;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:  #007bff 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.cancel-btn {
+  background-color: #28a745;
+}
+
+button.cancel-btn:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #e9f5ff;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Note title text */
+li h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Button container on each note */
+div .edit-delete-buttons {
+  width: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Note Editor */
+.note-editor {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.note-editor h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.note-editor input,
+.note-editor textarea {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.note-editor textarea {
+  resize: none;
+  height: 120px;
+}
+
+.note-editor .button-group {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.note-editor button {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.note-editor button:hover {
+  background-color: #0056b3;
+}
+
+.note-editor button.cancel-btn {
+  background-color: #28a745;
+}
+
+.note-editor button.cancel-btn:hover {
+  background-color: #218838;
+}
+
+.note-editor .save-cancel-button{
+  display: flex;
+  gap: 10px;
+}
+
