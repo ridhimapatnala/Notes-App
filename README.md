@@ -9,7 +9,7 @@ A simple and responsive Notes App built with the MERN stack. Users can create, e
 
 ## Getting Started
 
-### 📦 Start the backend server
+### Start the backend server
 ```bash
 cd backend
 npm install
