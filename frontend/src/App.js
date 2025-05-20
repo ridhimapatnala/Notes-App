@@ -1,3 +1,5 @@
+/*  https://notes-app-4itf.onrender.com */
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
@@ -10,17 +12,17 @@ function App() {
   const [selectedNote, setSelectedNote] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/notes')
+    axios.get(`${process.env.REACT_APP_API_URL}/notes`)
       .then(res => setNotes(res.data));
   }, []);
 
   const addNote = (note) => {
-    axios.post('http://localhost:5000/notes', note)
+    axios.post(`${process.env.REACT_APP_API_URL}/notes`, note)
       .then(res => setNotes([...notes, res.data]));
   };
 
   const updateNote = (id, updatedNote) => {
-    axios.put(`http://localhost:5000/notes/${id}`, updatedNote)
+    axios.put(`${process.env.REACT_APP_API_URL}/notes/${id}`, updatedNote)
       .then(res => {
         setNotes(notes.map(n => (n._id === id ? res.data : n)));
         setSelectedNote(null);
@@ -28,7 +30,7 @@ function App() {
   };
 
   const deleteNote = (id) => {
-    axios.delete(`http://localhost:5000/notes/${id}`)
+    axios.delete(`${process.env.REACT_APP_API_URL}/notes/${id}`)
       .then(() => setNotes(notes.filter(n => n._id !== id)));
   };
 

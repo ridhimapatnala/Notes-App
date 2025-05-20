@@ -25,6 +25,10 @@ const Note = mongoose.model('Note', new mongoose.Schema({
 }));
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Backend is running');
+});
+
 
 // Get all notes
 app.get('/notes', async (req, res) => {
