@@ -7,16 +7,16 @@ A simple and responsive Notes App built with the MERN stack. Users can create, e
 - `frontend/` – React app (UI)
 - `backend/` – Node.js + Express server connected to MongoDB
 
-## Getting Started
-
 ### Start the backend server
 ```bash
 cd backend
 npm install
 node server.js
+```
 
-💻 Start the frontend
-bash
+### Start the frontend
+```bash
 cd ../frontend
 npm install
 npm start
+```
